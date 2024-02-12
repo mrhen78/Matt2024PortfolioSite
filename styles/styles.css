@@ -1,0 +1,755 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Romanesco&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
+/*Common Across Site*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+main > article > div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > article > h1 {
+  font-size: 60px;
+  text-align: center;
+  padding: 50px;
+}
+
+.listimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border: 5px solid black;
+  width: 80%;
+}
+
+div > ul {
+  list-style-type: none;
+}
+
+div > ul > hr {
+  width: 50%;
+  margin: 50px auto;
+  border: 2px dotted black;
+}
+
+main > article > div > ul > li > h2 {
+  font-size: 40px;
+  padding: 0 0 30px 0;
+}
+
+div > ul > li > p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  padding: 0 15px;
+}
+
+div > ul > li:last-child {
+  margin-bottom: 70px;
+}
+
+section > main > article > div > ul > li > img {
+  display: block;
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+@media (max-width: 1000px) {
+  main > article > div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  main > article > h1 {
+    font-size: 40px;
+  }
+  main > article > div > ul > li > h2 {
+    font-size: 25px;
+  }
+}
+
+/*header*/
+
+header > p {
+  font-family: "Instrument";
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 3px solid grey;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+/*nav*/
+
+nav > ul {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  gap: 30px;
+  padding: 15px;
+  margin-top: 0;
+  border-bottom: 3px solid black;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.25rem;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > ul > li > p {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  nav > ul {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+/*footer*/
+
+footer > ul {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+footer > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+footer > p {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+footer > a > svg {
+  padding: 20px;
+}
+
+footer > a:nth-of-type(1) {
+  color: blue;
+}
+
+footer > a:nth-of-type(2) {
+  color: blue;
+}
+
+footer > a:nth-of-type(3) {
+  color: rgb(12, 199, 237);
+}
+
+footer > a:nth-of-type(4) {
+  color: red;
+}
+
+footer > a:nth-of-type(5) {
+  color: black;
+}
+
+footer > a:nth-of-type(6) {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  footer > ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  footer > ul > p {
+    display: none;
+  }
+}
+
+/*Index*/
+
+.indexintro {
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgb(88, 147, 224) 0%,
+    rgb(88, 147, 224) 50%,
+    black 50%,
+    black 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.indexintro > h1 {
+  font-size: 60px;
+}
+
+.indexintro > p {
+  font-size: 30px;
+  margin: 0 3%;
+}
+
+.indexintro > p,
+.indexintro > h1 {
+  color: white;
+  font-family: "Cedarville Cursive";
+}
+
+.svgcontainer {
+  position: relative;
+}
+
+.sun {
+  color: yellow;
+  right: 50px;
+  bottom: 20px;
+  position: absolute;
+}
+
+.cloud1 {
+  position: absolute;
+  right: 150px;
+  bottom: 30px;
+  color: white;
+}
+
+.cloud2 {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  color: white;
+}
+
+.cloud3 {
+  position: absolute;
+  color: white;
+  right: 270px;
+  bottom: -10px;
+}
+
+.moon {
+  position: absolute;
+  color: silver;
+  left: 50px;
+  bottom: 50px;
+}
+
+.cloud4 {
+  position: absolute;
+  color: rgb(125, 123, 151);
+  left: 90px;
+  bottom: 60px;
+}
+
+.cloud5 {
+  position: absolute;
+  color: rgb(125, 123, 151);
+  left: 200px;
+  bottom: 30px;
+}
+
+.cloud6 {
+  position: absolute;
+  color: rgb(125, 123, 151);
+  left: 300px;
+  bottom: 30px;
+}
+
+.imagebackgroundfixed {
+  background: center/70% url(../assets/images/me.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .sun {
+    width: 75px;
+    height: 75px;
+  }
+
+  .cloud1 {
+    width: 100px;
+    height: 100px;
+    right: 100px;
+  }
+
+  .cloud2 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cloud3 {
+    width: 140px;
+    height: 140px;
+    right: 120px;
+  }
+
+  .moon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cloud4 {
+    width: 50px;
+    height: 50px;
+    left: 60px;
+  }
+  .cloud5 {
+    width: 85px;
+    height: 85px;
+    left: 100px;
+  }
+  .cloud6 {
+    width: 110px;
+    height: 110px;
+    left: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .imagebackgroundfixed {
+    background: center/90% url(../assets/images/me.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 70vh;
+    margin: 0 auto;
+  }
+
+  .sun {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+  }
+
+  .cloud1 {
+    width: 60px;
+    height: 60px;
+    right: 60px;
+  }
+
+  .cloud2 {
+    width: 25px;
+    height: 25px;
+    right: 50px;
+  }
+
+  .cloud3 {
+    width: 70px;
+    height: 70px;
+    right: 80px;
+    bottom: 10px;
+  }
+
+  .moon {
+    width: 30px;
+    height: 30px;
+    left: 30px;
+    bottom: 30px;
+  }
+
+  .cloud4 {
+    width: 25px;
+    height: 25px;
+    left: 50px;
+    bottom: 30px;
+  }
+
+  .cloud5 {
+    width: 40px;
+    height: 40px;
+    left: 60px;
+  }
+
+  .cloud6 {
+    width: 55px;
+    height: 55px;
+    left: 90px;
+  }
+
+  .indexintro > h1 {
+    font-size: 40px;
+  }
+
+  .indexintro > p {
+    font-size: 20px;
+  }
+}
+
+/*Filmmaking/Videography*/
+
+.video {
+  width: 80%;
+}
+
+.filmheadline {
+  padding-bottom: 0;
+}
+
+section > main > article > a > p {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  section > main > article > a > p {
+    font-size: 1.25rem;
+  }
+}
+
+/*Sculpture/ Visual Art*/
+
+.gridshell {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 400px);
+  gap: 10px;
+}
+
+.firstartimage {
+  background: center/cover url(../assets/images/sculpture1.jpg);
+  background-repeat: no-repeat;
+  grid-area: 1/1/4/2;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.secondartimage {
+  background: center/cover url(../assets/images/sculpture2.jpg);
+  background-repeat: no-repeat;
+  grid-area: 1/2/2/2;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.thirdartimage {
+  background: center/cover url(../assets/images/sculpture4.jpg);
+  background-repeat: no-repeat;
+  grid-area: 2/2/2/3;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.fourthartimage {
+  background: top/cover url(../assets/images/sculpture6.jpg);
+  background-repeat: no-repeat;
+  grid-area: 3/2/4/3;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.fifthartimage {
+  background: top/cover url(../assets/images/sculpture8.jpg);
+  background-repeat: no-repeat;
+  grid-area: 1/3/2/4;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.sixthartimage {
+  background: center/cover url(../assets/images/sculpture10.jpg);
+  background-repeat: no-repeat;
+  grid-area: 2/3/3/4;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.seventhartimage {
+  background: center/cover url(../assets/images/sculpture16.jpg);
+  background-repeat: no-repeat;
+  grid-area: 3/3/4/4;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+@media (max-width: 1230px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-columns: repeat(2, 400px);
+    gap: 10px;
+  }
+
+  .fifthartimage {
+    background: top/cover url(../assets/images/sculpture8.jpg);
+    background-repeat: no-repeat;
+    grid-area: 4/1/5/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .sixthartimage {
+    background: center/cover url(../assets/images/sculpture10.jpg);
+    background-repeat: no-repeat;
+    grid-area: 4/2/5/3;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .seventhartimage {
+    background: center/cover url(../assets/images/sculpture16.jpg);
+    background-repeat: no-repeat;
+    grid-area: 5/1/6/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .eighthartimage {
+    background: center/cover url(../assets/images/sculpture11.jpg);
+    background-repeat: no-repeat;
+    grid-area: 5/2/6/3;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-rows: repeat(10, 200px);
+    grid-template-columns: 400px;
+    gap: 10px;
+  }
+
+  .firstartimage {
+    background: center/cover url(../assets/images/sculpture1.jpg);
+    background-repeat: no-repeat;
+    grid-area: 1/1/4/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .secondartimage {
+    background: center/cover url(../assets/images/sculpture2.jpg);
+    background-repeat: no-repeat;
+    grid-area: 4/1/5/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .thirdartimage {
+    background: center/cover url(../assets/images/sculpture4.jpg);
+    background-repeat: no-repeat;
+    grid-area: 5/1/6/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .fourthartimage {
+    background: top/cover url(../assets/images/sculpture6.jpg);
+    background-repeat: no-repeat;
+    grid-area: 6/1/7/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .fifthartimage {
+    background: top/cover url(../assets/images/sculpture8.jpg);
+    background-repeat: no-repeat;
+    grid-area: 7/1/8/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .sixthartimage {
+    background: center/cover url(../assets/images/sculpture10.jpg);
+    background-repeat: no-repeat;
+    grid-area: 8/1/9/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .seventhartimage {
+    background: center/cover url(../assets/images/sculpture16.jpg);
+    background-repeat: no-repeat;
+    grid-area: 9/1/10/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  .eighthartimage {
+    background: center/cover url(../assets/images/sculpture11.jpg);
+    background-repeat: no-repeat;
+    grid-area: 10/1/11/2;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-rows: repeat(10, 150px);
+    grid-template-columns: 300px;
+    gap: 10px;
+  }
+}
+
+/*Pet Care/ Parenting*/
+
+.gridshell2 {
+  background: center/cover url(../assets/images/ripleybackground.jpg);
+  background-repeat: no-repeat;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.gridshell22 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridcontainer2 {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  background-color: white;
+  border-radius: 2%;
+  width: 95%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  height: 80vh;
+}
+
+.gridcontainer2 > * {
+  margin: 5px;
+  border-radius: 5%;
+  border: 2px solid black;
+}
+
+.firstpet {
+  background: center/cover url(../assets/images/odie2.jpg);
+  grid-area: 1/1/4/2;
+}
+
+.secondpet {
+  background: center/cover url(../assets/images/bonnie2.jpg);
+  grid-area: 1/4/4/5;
+}
+
+.thirdpet {
+  background: top/cover url(../assets/images/ripley2.jpg);
+}
+
+.fourthpet {
+  background: left/cover url(../assets/images/cody2.jpg);
+}
+
+.fifthpet {
+  background: center/cover url(../assets/images/bonnie3.jpg);
+}
+
+.sixthpet {
+  background: center/cover url(../assets/images/ripley3.jpg);
+}
+
+.seventhpet {
+  background: center/cover url(../assets/images/bonnie4.jpg);
+}
+
+.eighthpet {
+  background: center/cover url(../assets/images/cody3.jpg);
+}
+
+@media (max-width: 800px) {
+  .gridcontainer2 {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    height: 400vh;
+    width: 85%;
+  }
+
+  .firstpet {
+    background: center/cover url(../assets/images/odie2.jpg);
+    grid-area: 1/1/4/2;
+  }
+
+  .secondpet {
+    background: center/cover url(../assets/images/bonnie2.jpg);
+    grid-area: 4/1/7/2;
+  }
+
+  .eigthpet {
+    background: bottom/cover url(../assets/images/cody3.jpg);
+  }
+}
+
+/*Contact-About*/
+
+.contacth1 {
+  font-size: 60px;
+  text-align: center;
+  padding: 50px 50px 20px 50px;
+}
+
+.contactp {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 20% 10px 20%;
+}
+
+.contact {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .contacth1 {
+    font-size: 40px;
+  }
+
+  .contactp {
+    font-size: 1.25rem;
+  }
+}
